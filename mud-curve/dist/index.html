@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Post-processing</title>
+		<style>
+			[data-scene] {
+				opacity: 0 !important;
+			}
+		</style>
+		<script type="module" crossorigin src="/mud-curve/assets/index-Bgjk5VX3.js"></script>
+		<link rel="stylesheet" crossorigin href="/mud-curve/assets/index-12_cTm56.css">
+	</head>
+	<body>
+		<div id="smooth-wrapper">
+			<div id="smooth-content">
+				<div class="container mx-auto my-16 px-4 md:px-8 lg:px-16">
+					<div class="h-[50vh]"></div>
+					<div class="grid grid-cols-1 gap-y-32 md:grid-cols-3 md:gap-x-8">
+						<div data-scene class="box col-span-1 aspect-video bg-amber-200">
+							<img
+								data-scene-asset
+								src="/mud-curve/1.webp"
+								class="object-cover w-full h-full"
+							/>
+						</div>
+						<div data-scene class="box col-span-1 aspect-[1/1.2] bg-blue-200">
+							<img
+								data-scene-asset
+								src="/mud-curve/2.webp"
+								class="object-cover w-full h-full"
+							/>
+						</div>
+						<div data-scene class="box col-span-1 aspect-[2/1] bg-green-200">
+							<img
+								data-scene-asset
+								src="/mud-curve/3.webp"
+								class="object-cover w-full h-full"
+							/>
+						</div>
+						<div data-scene class="box col-span-1 aspect-video bg-red-200">
+							<video
+								data-scene-asset
+								src="/mud-curve/1.webm"
+								class="object-cover w-full h-full"
+								autoplay
+								loop
+								muted
+								playsinline
+							></video>
+						</div>
+						<div data-scene class="box col-span-1 aspect-square bg-red-200">
+							<img
+								data-scene-asset
+								src="/mud-curve/4.webp"
+								class="object-cover w-full h-full"
+							/>
+						</div>
+						<div data-scene class="box col-span-1 aspect-video bg-purple-200">
+							<img
+								data-scene-asset
+								src="/mud-curve/5.webp"
+								class="object-cover w-full h-full"
+							/>
+						</div>
+						<div data-scene class="box col-span-1 aspect-[2/3] bg-pink-200">
+							<img
+								data-scene-asset
+								src="/mud-curve/1.webp"
+								class="object-cover w-full h-full"
+							/>
+						</div>
+						<div data-scene class="box col-span-1 aspect-square bg-yellow-200">
+							<img
+								data-scene-asset
+								src="/mud-curve/5.webp"
+								class="object-cover w-full h-full"
+							/>
+						</div>
+						<div data-scene class="box col-span-1 aspect-square bg-yellow-200">
+							<video
+								data-scene-asset
+								src="/mud-curve/2.webm"
+								class="object-cover w-full h-full"
+								autoplay
+								loop
+								muted
+								playsinline
+							></video>
+						</div>
+						<div data-scene class="box col-span-1 aspect-square bg-yellow-200">
+							<img
+								data-scene-asset
+								src="/mud-curve/2.webp"
+								class="object-cover w-full h-full"
+							/>
+						</div>
+						<div data-scene class="box col-span-1 aspect-[3/2] bg-indigo-200">
+							<img
+								data-scene-asset
+								src="/mud-curve/2.webp"
+								class="object-cover w-full h-full"
+							/>
+						</div>
+						<div data-scene class="box col-span-1 aspect-square bg-teal-200">
+							<img
+								data-scene-asset
+								src="/mud-curve/3.webp"
+								class="object-cover w-full h-full"
+							/>
+						</div>
+						<div data-scene class="box col-span-1 aspect-video bg-orange-200">
+							<img
+								data-scene-asset
+								src="/mud-curve/4.webp"
+								class="object-cover w-full h-full"
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="h-screen"></div>
+			</div>
+		</div>
+		<canvas class="webgl"></canvas>
+        <script src="/mud-curve/lib/ScrollSmoother.min.js"></script>
+	</body>
+</html>
