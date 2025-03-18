@@ -9,250 +9,93 @@
 				opacity: 0 !important;
 			}
 		</style>
-		<script type="module" crossorigin src="/mud-curve/assets/index-ortGQvYT.js"></script>
-		<link rel="stylesheet" crossorigin href="/mud-curve/assets/index-y04BXay1.css">
+		<script type="module" crossorigin src="/mud-curve/assets/index-DRqvdta2.js"></script>
+		<link rel="stylesheet" crossorigin href="/mud-curve/assets/index-C4DjDXoi.css">
 	</head>
 	<body>
 		<canvas class="webgl"></canvas>
 		<div id="smooth-wrapper">
 			<div id="smooth-content">
 				<nav class="flex gap-x-4 justify-center py-4 bg-gray-800 text-white">
-					<button class="cursor-pointer hover:text-amber-200" data-page="1">Page 1</button>
-					<button class="cursor-pointer hover:text-amber-200" data-page="2">Page 2</button>
+					<button id="destroyAll" class="cursor-pointer hover:text-amber-200">Destroy All</button>
+					<button id="initAll" class="cursor-pointer hover:text-amber-200">Init All</button>
+					<button id="destroyFirst" class="cursor-pointer hover:text-amber-200">Destroy First</button>
+					<button id="initFirst" class="cursor-pointer hover:text-amber-200">Init First</button>
 				</nav>
-				<section class="contents"></section>
-				<template id="page-1">
-					<div
-						data-page-1
-						class="container mx-auto my-16 space-y-4 px-4 md:px-8 lg:px-16"
-					>
-						<div class="grid grid-cols-1 gap-y-32 md:grid-cols-3 md:gap-x-8">
-							<div data-scene class="box col-span-1 aspect-video">
-								<img
-									data-scene-asset
-									src="/mud-curve/1.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div data-scene class="box col-span-1 aspect-[2/1]">
-								<img
-									data-scene-asset
-									src="/mud-curve/3.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div data-scene class="box col-span-1 aspect-video">
-								<video
-									data-scene-asset
-									src="/mud-curve/1.webm"
-									class="object-cover w-full h-full"
-									autoplay
-									loop
-									muted
-									playsinline
-								></video>
-							</div>
-							<div data-scene class="box col-span-1 aspect-square">
-								<img
-									data-scene-asset
-									src="/mud-curve/4.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div data-scene class="box col-span-1 aspect-video">
-								<img
-									data-scene-asset
-									src="/mud-curve/5.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div data-scene class="box col-span-1 aspect-[2/3]">
-								<img
-									data-scene-asset
-									src="/mud-curve/1.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div data-scene class="box col-span-1 aspect-square">
-								<img
-									data-scene-asset
-									src="/mud-curve/5.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div class="box col-span-1">
-								<div data-scene class="aspect-[1/1.2]">
-									<img
-										data-scene-asset
-										src="/mud-curve/2.webp"
-										class="object-cover w-full h-full"
-									/>
-								</div>
-								<div
-									data-scene
-									data-scene-fill="#345d53"
-									class="h-40 content-center p-4"
-								>
-									<h2 class="text-2xl z-10 relative text-center text-white">
-										Lorem ipsum
-									</h2>
-								</div>
-							</div>
-							<div>
-								<div data-scene class="box col-span-1 aspect-square">
-									<video
-										data-scene-asset
-										src="/mud-curve/2.webm"
-										class="object-cover w-full h-full"
-										autoplay
-										loop
-										muted
-										playsinline
-									></video>
-								</div>
-								<div
-									data-scene
-									data-scene-fill="#b5b5b5"
-									class="h-40 content-center p-4"
-								>
-									<h2 class="text-2xl z-10 relative text-center text-white">
-										Lorem ipsum
-									</h2>
-								</div>
-							</div>
-							<div data-scene class="box col-span-1 aspect-square">
+				<div class="container mx-auto my-16 space-y-4 px-4 md:px-8 lg:px-16">
+					<div class="grid grid-cols-1 gap-y-32 md:grid-cols-3 md:gap-x-8">
+						<div data-scene class="box col-span-1 aspect-video">
+							<img
+								data-scene-asset
+								src="/mud-curve/1.webp"
+								class="object-cover w-full h-full"
+							/>
+						</div>
+						<div data-scene class="box col-span-1 aspect-[2/1]">
+							<img
+								data-scene-asset
+								src="/mud-curve/3.webp"
+								class="object-cover w-full h-full"
+							/>
+						</div>
+						<div data-scene class="box col-span-1 aspect-video">
+							<video
+								data-scene-asset
+								src="/mud-curve/1.webm"
+								class="object-cover w-full h-full"
+								autoplay
+								loop
+								muted
+								playsinline
+							></video>
+						</div>
+						<div data-scene class="box col-span-1 aspect-square">
+							<img
+								data-scene-asset
+								src="/mud-curve/4.webp"
+								class="object-cover w-full h-full"
+							/>
+						</div>
+						<div data-scene class="box col-span-1 aspect-video">
+							<img
+								data-scene-asset
+								src="/mud-curve/5.webp"
+								class="object-cover w-full h-full"
+							/>
+						</div>
+						<div data-scene class="box col-span-1 aspect-[2/3]">
+							<img
+								data-scene-asset
+								src="/mud-curve/1.webp"
+								class="object-cover w-full h-full"
+							/>
+						</div>
+						<div data-scene class="box col-span-1 aspect-square">
+							<img
+								data-scene-asset
+								src="/mud-curve/5.webp"
+								class="object-cover w-full h-full"
+							/>
+						</div>
+						<div class="box col-span-1">
+							<div data-scene class="aspect-[1/1.2]">
 								<img
 									data-scene-asset
 									src="/mud-curve/2.webp"
 									class="object-cover w-full h-full"
 								/>
 							</div>
-							<div id="pick" data-scene class="box col-span-1 aspect-[3/2]">
-								<img
-									data-scene-asset
-									src="/mud-curve/2.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div data-scene class="box col-span-1 aspect-square">
-								<img
-									data-scene-asset
-									src="/mud-curve/3.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div data-scene class="box col-span-1 aspect-video">
-								<img
-									data-scene-asset
-									src="/mud-curve/4.webp"
-									class="object-cover w-full h-full"
-								/>
+							<div
+								data-scene
+								data-scene-fill="#345d53"
+								class="h-40 content-center p-4"
+							>
+								<h2 class="text-2xl z-10 relative text-center text-white">
+									Lorem ipsum
+								</h2>
 							</div>
 						</div>
-					</div>
-					<div class="h-screen"></div>
-				</template>
-				<template id="page-2">
-					<div
-						data-page-2
-						class="container mx-auto my-16 space-y-4 px-4 md:px-8 lg:px-16"
-					>
-						<div class="grid grid-cols-1 gap-y-32 md:grid-cols-3 md:gap-x-8">
-							<div class="col-span-1">
-								<div data-scene class="box aspect-square">
-									<img
-										data-scene-asset
-										src="/mud-curve/1.webp"
-										class="object-cover w-full h-full"
-									/>
-								</div>
-								<div
-									data-scene
-									data-scene-fill="#345d53"
-									class="h-40 content-center p-4"
-								>
-									<h2 class="text-2xl z-10 relative text-center text-white">
-										Lorem ipsum
-									</h2>
-								</div>
-							</div>
-							<div></div>
-							<div data-scene class="box col-span-1 aspect-[1/1.4]">
-								<img
-									data-scene-asset
-									src="/mud-curve/2.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div data-scene class="box col-span-1 aspect-square">
-								<img
-									data-scene-asset
-									src="/mud-curve/3.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div></div>
-							<div data-scene class="box col-span-1 aspect-square">
-								<img
-									data-scene-asset
-									src="/mud-curve/4.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div data-scene class="box col-span-1 aspect-video">
-								<img
-									data-scene-asset
-									src="/mud-curve/5.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div data-scene class="box col-span-1 aspect-square">
-								<video
-									data-scene-asset
-									src="/mud-curve/1.webm"
-									class="object-cover w-full h-full"
-									autoplay
-									loop
-									muted
-									playsinline
-								></video>
-							</div>
-							<div></div>
-							<div data-scene class="box col-span-1 aspect-[2/3]">
-								<img
-									data-scene-asset
-									src="/mud-curve/1.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div data-scene class="box col-span-1 aspect-square">
-								<img
-									data-scene-asset
-									src="/mud-curve/5.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div data-scene class="box col-span-1 aspect-square">
-								<img
-									data-scene-asset
-									src="/mud-curve/3.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div data-scene class="box col-span-1 aspect-square">
-								<img
-									data-scene-asset
-									src="/mud-curve/2.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div id="pick" data-scene class="box col-span-1 aspect-[3/2]">
-								<img
-									data-scene-asset
-									src="/mud-curve/2.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
+						<div>
 							<div data-scene class="box col-span-1 aspect-square">
 								<video
 									data-scene-asset
@@ -264,71 +107,47 @@
 									playsinline
 								></video>
 							</div>
-							<div data-scene class="box col-span-1 aspect-video">
-								<img
-									data-scene-asset
-									src="/mud-curve/4.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div></div>
-							<div data-scene class="box col-span-1 aspect-[2/3]">
-								<img
-									data-scene-asset
-									src="/mud-curve/1.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div data-scene class="box col-span-1 aspect-square">
-								<img
-									data-scene-asset
-									src="/mud-curve/5.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div data-scene class="box col-span-1 aspect-square">
-								<img
-									data-scene-asset
-									src="/mud-curve/3.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div data-scene class="box col-span-1 aspect-square">
-								<img
-									data-scene-asset
-									src="/mud-curve/2.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div id="pick" data-scene class="box col-span-1 aspect-[3/2]">
-								<img
-									data-scene-asset
-									src="/mud-curve/2.webp"
-									class="object-cover w-full h-full"
-								/>
-							</div>
-							<div data-scene class="box col-span-1 aspect-square">
-								<video
-									data-scene-asset
-									src="/mud-curve/2.webm"
-									class="object-cover w-full h-full"
-									autoplay
-									loop
-									muted
-									playsinline
-								></video>
-							</div>
-							<div data-scene class="box col-span-1 aspect-video">
-								<img
-									data-scene-asset
-									src="/mud-curve/4.webp"
-									class="object-cover w-full h-full"
-								/>
+							<div
+								data-scene
+								data-scene-fill="#b5b5b5"
+								class="h-40 content-center p-4"
+							>
+								<h2 class="text-2xl z-10 relative text-center text-white">
+									Lorem ipsum
+								</h2>
 							</div>
 						</div>
+						<div data-scene class="box col-span-1 aspect-square">
+							<img
+								data-scene-asset
+								src="/mud-curve/2.webp"
+								class="object-cover w-full h-full"
+							/>
+						</div>
+						<div data-scene class="box col-span-1 aspect-[3/2]">
+							<img
+								data-scene-asset
+								src="/mud-curve/2.webp"
+								class="object-cover w-full h-full"
+							/>
+						</div>
+						<div data-scene class="box col-span-1 aspect-square">
+							<img
+								data-scene-asset
+								src="/mud-curve/3.webp"
+								class="object-cover w-full h-full"
+							/>
+						</div>
+						<div data-scene class="box col-span-1 aspect-video">
+							<img
+								data-scene-asset
+								src="/mud-curve/4.webp"
+								class="object-cover w-full h-full"
+							/>
+						</div>
 					</div>
-					<div class="h-screen"></div>
-				</template>
+				</div>
+				<div class="h-screen"></div>
 			</div>
 		</div>
 		<script src="/mud-curve/lib/ScrollSmoother.min.js"></script>
